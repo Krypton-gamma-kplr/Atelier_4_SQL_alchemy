@@ -6,7 +6,7 @@ import pandas as pd
 engine = create_engine("sqlite:////content/my_db.db")
 
 # Établir une connexion à la base de données
-conn = engine.connect()
+conn = engine.connect() # test
 
 # Exécuter la requête et récupérer les résultats
 result_set = conn.execute(text("SELECT name FROM sqlite_master WHERE type='table'"))
